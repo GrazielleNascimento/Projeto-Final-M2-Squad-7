@@ -44,13 +44,3 @@ header nav:hover > a:not(:hover) {
     background: none;
 }
 
-.home {
-    display: flex;
-    height: 100dvh;
-}
-.home img {
-    position: absolute;
-    width: 100%;
-   
-    
-}
