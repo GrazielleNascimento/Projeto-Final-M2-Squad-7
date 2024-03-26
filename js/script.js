@@ -1,5 +1,12 @@
-window.onload = function() {
-    fetch('navbar/navbar.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('navbar').innerHTML = data);
-};
+$(function(){
+    $("#navbar").load("../navbar/navbar.html"); 
+  });
+
+$(function() {
+    $('#botao-mobile').on('click', function () {
+       $('#menu-mobile').toggleClass("active");
+       $('#menu-mobile').find("i").toggleClass("fa-x");
+    })
+});
+
+
