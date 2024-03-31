@@ -16,7 +16,8 @@ h1 {
 
     font-size: 1.5rem;
     text-align: justify;
-    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
     padding: 0 10%;
     line-height: 2rem;
     margin-bottom: 70px;
@@ -30,11 +31,39 @@ h1 {
     flex-direction: column;
 }
 
-.primeira-imagem {
+.imagem {
  
     width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin-bottom: 50px;
 }
+
+.topicos
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.li-topicos{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 0 10%;
+    line-height: 2rem;
+
+}
+
+.video-abelhas{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+
+}
+
+
