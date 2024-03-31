@@ -22,8 +22,8 @@
     color: var(--color-neutral-1);
 }
 
-#incio-titulo .subtitulo {
-    font-size: 1.2rem;
+#inicio-titulo .subtitulo {
+    font-size: 1.4rem;
 }
 
 #inico-banner {
@@ -50,4 +50,27 @@
     top: 0;
     right: 0;
     z-index: 1;
+}
+
+@media screen and (max-width:1170px) {
+    #inicio {
+        min-height: auto;
+        min-width: 100%;
+        padding-top: 0;
+    }
+
+    #inicio-banner,
+    #inico-banner img,
+    .forma {
+        display: none;
+    }
+    
+    #inicio-titulo {
+        width: 100%;
+        text-align: start;
+    }
+
+    #inicio-titulo .subtitulo {
+        margin-bottom: 24px;
+    }
 }

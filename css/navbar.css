@@ -13,7 +13,7 @@
 
 #nav-logo {
     font-size: 24px;
-    color: #001d4a;
+    color: var(--color-primary-4);
 }
 
 #nav-list {
@@ -23,22 +23,30 @@
 }
 
 .nav-item a {
+    color: var(--color-primary-4);
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
     padding: 8px 16px;
-    border-radius: 99px;
+    border-radius: 4px;
     transition: 0.3s;
 }
 
 .nav-item.active a {
-    background: yellow;
+    color: var(--color-neutral-0);
+    background: var(--color-primary-4);
 }
 
 .nav-item a:hover {
-    background: yellow;
+    color: var(--color-primary-4);
+    border-right: 1px solid  var(--color-primary-4);
+    border-left: 1px solid  var(--color-primary-4);
 }
 
+.nav-item.active a:hover {
+    color: var(--color-neutral-0);
+    background: var(--color-primary-4);
+}
 
 #botao-mobile {
     display: none;
