@@ -23,8 +23,8 @@
     color: var(--color-neutral-0);
 }
 
-#incio-titulo .subtitulo {
-    font-size: 1.2rem;
+#inicio-titulo .subtitulo {
+    font-size: 1.4rem;
 }
 
 #inicio-banner {
@@ -55,6 +55,7 @@
 
 @media screen and (max-width:1170px) {
     #inicio {
+        min-height: auto;
         min-width: 100%;
         padding-top: 0;
     }
@@ -68,5 +69,9 @@
     #inicio-titulo {
         width: 100%;
         text-align: start;
+    }
+
+    #inicio-titulo .subtitulo {
+        margin-bottom: 24px;
     }
 }
