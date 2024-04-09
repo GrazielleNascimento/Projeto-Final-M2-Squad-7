@@ -53,6 +53,17 @@
     z-index: 1;
 }
 
+.paragrafo {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 28px;
+    padding: 0 5%;
+    line-height: 2rem;
+}
+
+
+
 @media screen and (max-width:1170px) {
     #inicio {
         min-height: auto;
