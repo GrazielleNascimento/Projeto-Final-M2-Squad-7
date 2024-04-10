@@ -1,4 +1,6 @@
-
+section {
+    padding: 28px  8%;
+}
 #inicio {
     display: flex;
     min-height: calc(100vh - 85px);
@@ -25,6 +27,7 @@
 
 #inicio-titulo .subtitulo {
     font-size: 1.4rem;
+    font-weight: 500;
 }
 
 #inicio-banner {
@@ -37,30 +40,40 @@
 }
 
 #inicio-banner img {
-   /* height: 50%; */
    width: 512px;
-   border-radius: 40% 50% 0 70%;
+   border-radius: 40% 50% 10% 70%;
 }
 
 .forma{
     background-color: var(--color-neutral-1);
-    width: 50%;
+    width: 45%;
     height: 95%;
     position: absolute;
-    border-radius: 70% 20% 0 30%;
+    border-radius: 30% 40% 10% 70%;
     top: 0;
-    right: 0;
+    right: 6%;
     z-index: 1;
 }
 
+#introducao {
+    display: flex;
+    flex-direction: column;
+}
+
+#introducao img {
+    width: 70%;
+    align-self: center;
+}
+
 .paragrafo {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: justify;
     margin-top: 5px;
     margin-bottom: 28px;
-    padding: 0 5%;
+    /* padding: 0 5% 0 0; */
     line-height: 2rem;
 }
+
 
 #causas {
     background-color: var(--color-primary-4);
@@ -80,7 +93,7 @@
 }
 
 #causas-paragrafo {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--color-neutral-0);
     text-align: justify;
     margin-top: 5px;
@@ -209,6 +222,10 @@ text-align: center;
 
     #inicio-titulo .subtitulo {
         margin-bottom: 24px;
+    }
+
+    #introducao img {
+        width: 100%;
     }
 
     #causas-paragrafo {
