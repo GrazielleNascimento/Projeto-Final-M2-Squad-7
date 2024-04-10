@@ -70,7 +70,17 @@ section {
     text-align: justify;
     margin-top: 5px;
     margin-bottom: 28px;
-    /* padding: 0 5% 0 0; */
+    padding: 0 5%;
+    line-height: 2rem;
+}
+
+.secao-titulo{
+    font-size: 1.6rem;
+    color: var(--color-neutral-1);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 28px;
+    padding: 0 5%;
     line-height: 2rem;
 }
 
@@ -85,7 +95,7 @@ section {
 #causas-titulo {
     font-size: 1.6rem;
     color: var(--color-neutral-0);
-    text-align: justify;
+    text-align: center;
     margin-top: 5px;
     margin-bottom: 28px;
     padding: 0 5%;
@@ -198,6 +208,55 @@ text-align: center;
     from {opacity: .2}
     to {opacity: 1}
 }
+
+#consequencias .card {
+    background-color: var(--color-primary-2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 28px;
+  }
+
+  .card-2 {
+    background-color: var(--color-primary-4);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 20px;
+  }
+
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card-container {
+    padding: 10px 16px;
+  }
+
+  .card-titulo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width:  100%;
+    color: var(--color-neutral-1);
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  .card-titulo-2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width:  100%;
+    color: var(--color-primary-1);
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  .card-2  .paragrafo{
+    color: var(--color-neutral-0);
+  }
 
 
 
