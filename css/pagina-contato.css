@@ -5,11 +5,11 @@
     font-family: sans-serif;
     font-weight: bold;
 }
-body{
+main{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 91px);
     background-image: url(../assets/_6cf5f671-7eed-4b14-a542-e011048f6809.jpeg);
     background-size: cover;
     background-position: center;
@@ -21,6 +21,7 @@ section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 28px 0;
     padding: 10px 45px;
     background: #ffb60a;
     width: 500px;

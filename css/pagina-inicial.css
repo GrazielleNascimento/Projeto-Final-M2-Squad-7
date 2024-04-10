@@ -1,4 +1,6 @@
-
+section {
+    padding: 28px  8%;
+}
 #inicio {
     display: flex;
     min-height: calc(100vh - 85px);
@@ -25,6 +27,7 @@
 
 #inicio-titulo .subtitulo {
     font-size: 1.4rem;
+    font-weight: 500;
 }
 
 #inicio-banner {
@@ -37,21 +40,226 @@
 }
 
 #inicio-banner img {
-   /* height: 50%; */
    width: 512px;
-   border-radius: 40% 50% 0 70%;
+   border-radius: 40% 50% 10% 70%;
 }
 
 .forma{
     background-color: var(--color-neutral-1);
-    width: 50%;
+    width: 45%;
     height: 95%;
     position: absolute;
-    border-radius: 70% 20% 0 30%;
+    border-radius: 30% 40% 10% 70%;
     top: 0;
-    right: 0;
+    right: 6%;
     z-index: 1;
 }
+
+#introducao {
+    display: flex;
+    flex-direction: column;
+}
+
+#introducao img {
+    width: 70%;
+    align-self: center;
+}
+
+.paragrafo {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 28px;
+    padding: 0 5%;
+    line-height: 2rem;
+}
+
+.secao-titulo{
+    font-size: 1.6rem;
+    color: var(--color-neutral-1);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 28px;
+    padding: 0 5%;
+    line-height: 2rem;
+}
+
+
+#causas {
+    background-color: var(--color-primary-4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#causas-titulo {
+    font-size: 1.6rem;
+    color: var(--color-neutral-0);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 28px;
+    padding: 0 5%;
+    line-height: 2rem;
+}
+
+#causas-paragrafo {
+    font-size: 1.2rem;
+    color: var(--color-neutral-0);
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 28px;
+    padding: 0 5%;
+    line-height: 2rem;
+}
+
+.carrosel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    width: 60%;
+    padding: 32px;
+    margin-bottom: 28px;
+    border-radius: 32px;
+}
+
+.voltar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width:  100%;
+    color: var(--color-primary-1);
+    text-decoration: none;
+}
+
+.texto-voltar {
+    margin-top: 4px;
+}
+
+.carousel-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.slide-titulo{
+    font-size: 28px;
+    width:  100%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conteudo {
+    width: auto;
+    text-align: justify;
+    margin-bottom: 28px;
+}
+
+.carousel-item img{
+    width: auto;
+    border-radius: 32px;
+    height: 160px;
+}
+
+.carrosel-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.next-button {
+    background-color: var(--color-primary-1);
+    color: var(--color-neutral-0);
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 999px;
+}
+
+.dot-box {
+text-align: center;
+}
+
+.carousel-indicator {
+    display: inline-block;
+    width: 25px;
+    height: 15px;
+    margin: 0 2px;
+    background-color: var(--color-primary-3);
+    border-radius: 20%;
+    cursor: pointer;
+    transition: background-color .6s ease;
+}
+
+.actived, .dot:hover {
+    background-color: var(--color-primary-1);
+}
+
+.animacao {
+    animation-name: animacao;
+    animation-duration: 1.5s;
+}
+
+@keyframes animacao {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
+#consequencias .card {
+    background-color: var(--color-primary-2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 28px;
+  }
+
+  .card-2 {
+    background-color: var(--color-primary-4);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 20px;
+  }
+
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card-container {
+    padding: 10px 16px;
+  }
+
+  .card-titulo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width:  100%;
+    color: var(--color-neutral-1);
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  .card-titulo-2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width:  100%;
+    color: var(--color-primary-1);
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  .card-2  .paragrafo{
+    color: var(--color-neutral-0);
+  }
+
+
+
 
 @media screen and (max-width:1170px) {
     #inicio {
@@ -73,5 +281,21 @@
 
     #inicio-titulo .subtitulo {
         margin-bottom: 24px;
+    }
+
+    #introducao img {
+        width: 100%;
+    }
+
+    #causas-paragrafo {
+        text-align: start;
+    }
+
+    #causas .conteudo {
+        text-align: start;
+    }
+
+    .carrosel {
+        width: 80%;
     }
 }
