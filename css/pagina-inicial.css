@@ -47,7 +47,7 @@ section {
 .forma{
     background-color: var(--color-neutral-1);
     width: 45%;
-    height: 95%;
+    height: 90%;
     position: absolute;
     border-radius: 30% 40% 10% 70%;
     top: 0;
