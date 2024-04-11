@@ -113,13 +113,13 @@ footer{
     font-weight: 200;
 }
 
-.footer-bottom .contato-btn {
+.footer-bottom .contato-button {
     color: rgb(28 25 23); 
     transition: background-color 0.3s ease;
     font-weight: bold;
 }
 
-.footer-bottom .contato-btn:hover {
+.footer-bottom .contato-button:hover {
     padding: 5px;
     border-radius: 5%;
     background-color: var(--color-primary-1); 

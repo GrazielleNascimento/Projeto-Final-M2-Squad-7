@@ -26,9 +26,9 @@ $(function() {
         case '/paginas/pagina-sobre-as-abelhas.html':
             $('#about').addClass('active');
             break;
-        // case '/paginas/pagina-sobre-as-abelhas.html':
-            // $('#help').addClass('active');
-            // break;
+        case '/paginas/pagina-como-ajudar.html':
+            $('#help').addClass('active');
+            break;
         case '/paginas/pagina-contato.html':
             $('#contact').addClass('active');
             break;
