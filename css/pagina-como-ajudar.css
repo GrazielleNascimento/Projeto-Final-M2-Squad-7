@@ -1,0 +1,54 @@
+
+h1 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 2rem 0;
+
+}
+
+.paragrafo {
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 0 10%;
+    line-height: 2rem;
+    margin-bottom: 70px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagem {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+.video-abelhas{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.video-abelhas {
+    display: block;
+    margin: 28px auto;
+}
+

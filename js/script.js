@@ -1,9 +1,44 @@
 $(function() {
   $('#botao-mobile').on('click', function () {
       $('#menu-mobile').toggleClass("active");
+      $('main').toggleClass("active");
       $('#botao-mobile').find("i").toggleClass("fa-solid fa-x");
   })
 });
+
+$(window).on('scroll', function() {
+    if ($(this).scrollTop() > 0) {
+      $('.navbar').addClass('scroll');
+    } else {
+      $('.navbar').removeClass('scroll');
+    }
+  });
+
+$(function() {
+    let pathname = window.location.pathname;
+    $('#nav-list li').removeClass('active'); 
+
+// Adiciona a classe 'active' ao item correspondente
+    switch (pathname) {
+        case '/index.html':
+            $('#home').addClass('active');
+            break;
+        case '/paginas/pagina-sobre-as-abelhas.html':
+            $('#about').addClass('active');
+            break;
+        case '/paginas/pagina-como-ajudar.html':
+            $('#help').addClass('active');
+            break;
+        case '/paginas/pagina-contato.html':
+            $('#contact').addClass('active');
+            break;
+        default:
+            $('#nav-list li').removeClass('active'); 
+            break;
+    }
+});
+  
+  
 
 $(document).ready(function() {
   let slides = $(".carousel-item");

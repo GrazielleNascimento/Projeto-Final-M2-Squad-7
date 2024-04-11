@@ -14,10 +14,10 @@
 
     <header id="navbar"></header>
 
-    <main>
-        <section>
+    <main id="main-contact">
+        <section id="section-contact">
             <h2>Contato</h2>
-            <form action="https://api.staticforms.xyz/submit" method="post">
+            <form id="myForm" action="https://api.staticforms.xyz/submit" method="post">
                 <label>Nome</label>
                 <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
                 <label>Email</label>
@@ -26,17 +26,21 @@
                 <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
                 <button type="submit">Enviar</button>
                 <input type="hidden" name="accessKey" value="557707e8-0bd0-405d-a816-7154f9bc63ba">
-                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/paginas/pagina-obrigado.html">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/paginas/pagina-obrigado.html">
             </form>
         </section>
     </main>
 
+    <footer id="footer"></footer>
+    
 
     <script>
         $(function () {
           $("#navbar").load("../navbar/navbar.html");
+          $("#footer").load("../footer/footer.html");
         });
       </script>
       <script src="/js/script.js"></script>
+      <script src="/js/contact.js"></script>
 </body>
 </html>

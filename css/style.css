@@ -3,6 +3,7 @@
 
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,14 @@ body {
     background-color: var(--color-neutral-0);
 }
 
+main {
+    margin-top: 100px;
+  }
 
+main.active {
+    margin-top: 290px; 
+}
+  
 
 
 :root {

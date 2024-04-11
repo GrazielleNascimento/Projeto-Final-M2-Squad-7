@@ -1,8 +1,17 @@
 
 .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
     width: 100%;
     padding: 28px 8%;
+    background-color: var(--color-neutral-0);
 }
+
+.navbar.scroll {
+    box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
 
 #nav {
     width: 100%;
@@ -11,9 +20,19 @@
     justify-content: space-between;
 }
 
-#nav-logo {
+#nav-logo-container {
+    width: min-content;
+    display: flex;
+    align-items: center;
+}
+  
+#nav-logo-titulo {
+    margin-left: 10px; 
     font-size: 24px;
-    color: var(--color-primary-4);
+}
+  
+#nav-logo {
+    height: 45px;
 }
 
 #nav-list {
