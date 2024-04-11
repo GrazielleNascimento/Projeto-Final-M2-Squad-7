@@ -1,0 +1,150 @@
+
+footer{
+    background: #FFB60A;
+    height: auto;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    padding-top: 40px;
+    color: rgb(28 25 23);
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    gap: 25px;
+}
+.footer-content h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+#logo-container {
+    width: min-content;
+    display: flex;
+    align-items: center;
+}
+  
+#logo-titulo {
+    font-size: 24px;
+}
+  
+#logo {
+    height: 50px;
+}
+
+#footer-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+#footer-social-media .footer-time{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-1);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color:rgb(28 25 23);
+}
+.socials a i{
+    font-size: 1.7rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: white;
+}
+
+.footer-bottom{
+    background: var(--color-neutral-0);
+    width: 40%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.footer-bottom .contato-button {
+    color: rgb(28 25 23); 
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.footer-bottom .contato-button:hover {
+    padding: 5px;
+    border-radius: 5%;
+    background-color: var(--color-primary-1); 
+    color: white; 
+}
+
+#footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-neutral-1);
+    color: var(--color-neutral-0);
+    line-height: 28px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1.5rem;
+}
+
+@media screen and (max-width:1170px) {
+    .footer-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-content > * {
+        width: 100%;
+    }
+}

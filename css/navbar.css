@@ -1,0 +1,112 @@
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 28px 8%;
+    background-color: var(--color-neutral-0);
+}
+
+.navbar.scroll {
+    box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+#nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-logo-container {
+    width: min-content;
+    display: flex;
+    align-items: center;
+}
+  
+#nav-logo-titulo {
+    margin-left: 10px; 
+    font-size: 24px;
+}
+  
+#nav-logo {
+    height: 45px;
+}
+
+#nav-list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.nav-item a {
+    color: var(--color-primary-4);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.nav-item.active a {
+    color: var(--color-neutral-0);
+    background: var(--color-primary-4);
+}
+
+.nav-item a:hover {
+    color: var(--color-primary-4);
+    border-right: 1px solid  var(--color-primary-4);
+    border-left: 1px solid  var(--color-primary-4);
+}
+
+.nav-item.active a:hover {
+    color: var(--color-neutral-0);
+    background: var(--color-primary-4);
+}
+
+#botao-mobile {
+    display: none;
+}
+
+#menu-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    #nav-list {
+        display: none;
+    }
+
+    #botao-mobile {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #menu-mobile.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-list-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #nav-list-mobile .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+}
+
+
+
+

@@ -1,0 +1,107 @@
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+#main-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/_6cf5f671-7eed-4b14-a542-e011048f6809.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#section-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 28px 0;
+    padding: 10px 45px;
+    background: var(--color-primary-1);
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#section-contact h2{
+    color: var(--color-primary-4);
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+#section-contact form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: var(--color-primary-4) ;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: var(--color-primary-4);
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: #f5f5f5;
+    color: var(--color-primary-4);
+    border-radius: 16px;
+}
+/*Página do Obrigado*/
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000f14;
+    flex-direction: column;
+ }
+ .text{
+     font-size: 45px;
+     color: #f5f5f5;
+     margin-bottom: 30px;
+ }
+ .paragrafo{
+     color: #f5f5f5;
+     margin-bottom: 50px;
+ }
+ .btn-contact{
+     padding: 15px 55px;
+     background: #f5f5f5;
+     text-decoration: none;
+     color: #101026;
+     font-size: 18px;
+     transition: all 0.5s;
+ }
+ .btn-contact:hover{
+     border-radius: 16px;
+ }
